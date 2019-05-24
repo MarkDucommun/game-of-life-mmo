@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="game-of-life-mmo-jvm">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <root id="archive" name="game-of-life-mmo-jvm.jar">
+      <element id="module-output" name="game-of-life-mmo.jvmMain" />
+    </root>
+  </artifact>
+</component>
