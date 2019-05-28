@@ -19,7 +19,7 @@ data class View(
     }
 }
 
-val Int.viewport get() = Viewport(origin = -(this / 2) by this / 2, width = this + 1, height = this + 1)
+val Int.viewport get() = Viewport(origin = -(this / 2) by this / 2, width = this, height = this)
 
 fun Plane.toView(viewport: Viewport): View {
 

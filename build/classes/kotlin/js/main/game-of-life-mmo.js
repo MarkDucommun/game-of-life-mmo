@@ -390,7 +390,7 @@
     return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.living, other.living) && Kotlin.equals(this.width, other.width) && Kotlin.equals(this.height, other.height)))));
   };
   function get_viewport($receiver) {
-    return new Viewport(Coordinate$Companion_getInstance().by_dqglrj$(-($receiver / 2 | 0) | 0, $receiver / 2 | 0), $receiver + 1 | 0, $receiver + 1 | 0);
+    return new Viewport(Coordinate$Companion_getInstance().by_dqglrj$(-($receiver / 2 | 0) | 0, $receiver / 2 | 0), $receiver, $receiver);
   }
   function toView$between(closure$viewport, closure$farCorner) {
     return function (coordinate) {
@@ -453,7 +453,7 @@
   }
   function main() {
     var tmp$, tmp$_0, tmp$_1;
-    var dimension = 1000;
+    var dimension = 100;
     var viewport = get_viewport(100);
     var $receiver = Kotlin.isType(tmp$ = document.createElement('canvas'), HTMLCanvasElement) ? tmp$ : throwCCE();
     $receiver.width = dimension;

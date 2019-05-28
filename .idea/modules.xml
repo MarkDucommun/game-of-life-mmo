@@ -3,12 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/game-of-life-mmo.iml" filepath="$PROJECT_DIR$/game-of-life-mmo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/game-of-life-mmo.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/game-of-life-mmo.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/game-of-life-mmo.common.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/common/game-of-life-mmo.common.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/game-of-life-mmo.common.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/game-of-life-mmo.common.commonTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.commonMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.commonTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jsMain.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jsMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jsTest.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jsTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jvmMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jvmTest.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.jvmTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/game-of-life-mmo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/game-of-life-mmo.test.iml" />
     </modules>
   </component>
 </project>

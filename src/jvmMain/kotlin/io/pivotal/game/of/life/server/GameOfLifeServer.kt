@@ -2,15 +2,14 @@ package io.pivotal.game.of.life.server
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import io.pivotal.game.of.life.core.Coordinate.Companion.by
 import io.pivotal.game.of.life.core.Plane
 import io.pivotal.game.of.life.core.Plane.Companion.plane
+import io.pivotal.game.of.life.core.Coordinate.Companion.by
 import io.pivotal.game.of.life.core.next
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
-import org.springframework.core.io.ClassPathResource
 import org.springframework.core.io.Resource
 import org.springframework.http.MediaType
 import org.springframework.web.reactive.function.server.RouterFunction
@@ -28,15 +27,13 @@ import java.time.Duration
 @SpringBootApplication
 open class GameOfLifeServer {
 
-    init {
-
-        val a = ClassPathResource("/index.html")
-
-        println()
-    }
-
     @Bean
     open fun mapper() = jacksonObjectMapper()
+
+    @Bean
+    open fun startingBoard(): Plane {
+        return acorn
+    }
 
     private val rPentomino = plane(
         -1 by 0,
@@ -55,11 +52,6 @@ open class GameOfLifeServer {
         2 by -1,
         3 by -1
     )
-
-    @Bean
-    open fun startingBoard(): Plane {
-        return acorn
-    }
 
     @Bean
     open fun boardHolder(startingPlane: Plane): BoardHolder = object : BoardHolder {
@@ -93,11 +85,10 @@ open class GameOfLifeServer {
     open fun handlerAdapter() = WebSocketHandlerAdapter()
 
     @Bean
-    open fun indexRouter(@Value("classpath:/static/index.html") indexHtml: Resource): RouterFunction<ServerResponse> {
-        return router {
+    open fun indexRouter(@Value("classpath:/static/index.html") indexHtml: Resource) =
+        router {
             GET("/") { ok().contentType(MediaType.TEXT_HTML).syncBody(indexHtml) }
         }
-    }
 }
 
 interface BoardHolder {

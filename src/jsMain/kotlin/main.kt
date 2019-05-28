@@ -6,7 +6,7 @@ import kotlin.browser.document
 
 fun main() {
 
-    val dimension = 1000
+    val dimension = 100
     val viewport = 100.viewport
 
     val htmlCanvas = (document.createElement("canvas") as HTMLCanvasElement).apply {

@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="game-of-life-mmo.jvmMain" target="1.8" />
       <module name="game-of-life-mmo.jvmTest" target="1.8" />
+      <module name="game-of-life-mmo.main" target="12" />
+      <module name="game-of-life-mmo.test" target="12" />
     </bytecodeTargetLevel>
   </component>
 </project>

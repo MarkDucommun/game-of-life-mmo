@@ -8,3 +8,5 @@ pluginManagement {
     }
 }
 rootProject.name = 'game-of-life-mmo'
+
+include 'common'
